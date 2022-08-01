@@ -11,7 +11,6 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="OpenWeatherMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -57,6 +56,9 @@
                                                 <buttonConfiguration key="configuration" style="gray" title="Войти">
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="SignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVw-db-o8x"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
@@ -106,7 +108,13 @@
                             <constraint firstItem="YoA-wc-MOs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pZE-VL-AUs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginScrollView" destination="YoA-wc-MOs" id="97g-WJ-VnU"/>
+                        <outlet property="loginTextField" destination="aQE-jx-hql" id="roN-Nr-Oas"/>
+                        <outlet property="passwordTextField" destination="CLk-G6-duw" id="fQx-AQ-eBF"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
