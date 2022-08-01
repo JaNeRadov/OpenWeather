@@ -91,7 +91,8 @@ class LoginViewController: UIViewController {
         // Получаем текст-пароль
         guard let password = passwordTextField.text else { return }
         // Проверяем, верны ли они
-        if login == "admin" && password == "123456" { print("успешная авторизация")
+        if login == "admin" && password == "123456" {
+            print("успешная авторизация")
         } else {
             print("неуспешная авторизация")
         }
